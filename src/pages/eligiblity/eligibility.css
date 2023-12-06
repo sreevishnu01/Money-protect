@@ -1,0 +1,631 @@
+.Mui-selected{
+    background-color: #151a26 !important;
+    background-color: #10141e !important;
+    color: #fff !important;
+}
+
+
+.css-eg0mwd-MuiSlider-thumb {
+  background: radial-gradient(white 30%, #DBA953 40%);
+  width:120px;
+}
+.css-eg0mwd-MuiSlider-thumb:hover, .css-eg0mwd-MuiSlider-thumb.Mui-focusVisible{
+  box-shadow: 0 0 0 8px #dba95359 !important;
+}
+.overview_header >div >div{
+    /* justify-content: space-around; */
+}
+.overview_header .menus{
+    /* width: 150px !important; */
+}
+.overview_header .eligibility_header_btns{
+    width: 35%;
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0 20px;
+}
+.overview_header .eligibility_header_btns Button{
+    background-color: #d3ab61 !important;
+    color: #fff !important;
+    padding: 12px 25px ;
+    border-radius: 30px !important;
+} 
+
+.css-1aquho2-MuiTabs-indicator{
+    background-color:#d3ab61 !important;
+}
+.css-k8tzmm{
+    color: #fff !important;
+}
+.overview_header .header_logo{
+    margin: 0 40px;
+    width: 100px;
+    padding: 10px;
+}
+.overview_header .header_logo img{
+    width: 100%;
+}
+.css-14pt78w-MuiSlider-rail{
+    background-color: #aca4a4 !important;
+}
+.css-1gv0vcd-MuiSlider-track{
+    background-color: #d3ab61 !important;
+    border: none !important;
+}
+.css-adeloa-MuiSlider-root::after{
+    background-color: #d3ab61 !important;
+}
+.slider{
+    background-color: #fff;
+}
+span.MuiSlider-thumb.MuiSlider-thumbSizeMedium.MuiSlider-thumbColorSecondary.MuiSlider-thumb.MuiSlider-thumbSizeMedium.MuiSlider-thumbColorSecondary.css-frv3qg-MuiSlider-thumb{
+    color: #fff !important;
+}
+/* .MuiSlider-valueLabelOpen{
+    box-shadow:0 0 0 10px #d3ab61 !important;
+} */
+.Mui-active{
+    box-shadow: 0 0 0 14px #d3ab619b !important;
+}
+.css-frv3qg-MuiSlider-thumb:before{
+    box-shadow:0px 0 0 10px #d3ab61 !important;
+}
+.active{
+  background-color: #10141e;
+  border-bottom: 3px solid #dba953 !important;
+}
+.eligibility_calculator_cont,.eligibility_mortgage_cont{
+    display: flex;
+    padding: 20px 20px 0 20px ;
+    border-radius: 0 0 20px 20px;
+    /* background-color: #fff; */
+    flex-wrap: wrap;
+}
+
+.Eligibility_cal{
+    padding: 20px 0 !important;
+}
+.eligibility_tabs{
+    box-shadow: 0 10px 10px #f3eadc;
+    border-radius: 30px;
+}
+.eligibility_tabs ul{
+    padding: 0 50px 0 0;
+    display: flex;
+    gap: 0 5px;
+    border-radius: 10px 10px 0 0;
+}
+.eligibility_tabs li{
+    background-color: #aca4a4;
+    padding: 20px;
+    border-radius: 10px 10px 0  0;
+}
+.eligibility_tabs li:nth-child(1){
+    background-color: #fff;
+  }
+.eligibility_tab:active{
+    box-shadow:5px 5px 5px #aca4a4;
+}
+.eligibility_cal_left{
+    width: 40%;
+    padding: 20px;
+}
+.eligibility_cal_left label{
+    margin: 30px 0 0 0;
+    display: block;
+}
+.eligibility_cal_left .two_inputs{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.eligibility_cal_left .slider{
+    padding: 20px;
+}
+.eligibility_cal_left .input_range > div {
+    margin: 10px 0;
+}
+.eligibility_cal_left .input_range > div > div{
+    display: flex;
+    justify-content: space-between;
+}
+.eligibility_cal_right{
+    width: 60%;
+    padding: 0 50px;
+}
+.home_img{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.homeIcon{
+    width: 100px;
+    margin: 0 auto;
+}
+.homeIcon img{
+    width: 100%;
+}
+.month_amount{
+    display: flex;
+    /* width: 80%; */
+    margin: 30px 0;
+    justify-content: space-around;
+    text-align: center;
+    gap: 0 20px;
+}
+/*  */
+    /* mortgage */
+.eligibility_mortgage_cont > div{
+  /* width: 50%; */
+  background-color: #f9f3ea;
+  width: 100%;
+  padding: 20px ;
+}
+.eligibility_mortgage_cont h2{
+  margin: 10px 0 30px 0;
+}
+.eligibility_mortgage_cont label{
+  margin: 30px 0 10px 0;
+  display: inline-block;
+}
+.eligibility_mortgage_cont input{
+  width: 100% !important;
+  text-align: left !important;
+  display: block;
+}
+.eligibility_mortgage_cont input[type = "number"]{
+  padding: 15px 10px;
+}
+.eligibility_mortgage_cont .range-wrap label{
+  display: flex;
+  justify-content: space-between;
+}
+.calculator-output table{
+  width: 100%;
+  text-align: center;
+}
+.calculator-output table,  .calculator-output tr{
+  border-bottom: 2px solid #DBA953;
+  border-collapse: collapse;
+}
+.calculator-output thead{
+  background-color: #DBA953;
+  color: #fff;
+  font-weight: 600;
+}
+.calculator-output th{
+  padding: 20px 0;
+}
+.calculator-output td{
+  padding: 20px 0;
+}
+/*  */
+.congralation{
+    padding: 50px 20px;
+    background-color: #d3ab61;
+    text-align: center;
+    color: #fff;
+    border-radius: 30px;
+}
+.congralation h2{
+    margin: 10px 0 10px 0;
+}
+.congralation Button{
+    background-color: #151a26 !important;
+    margin: 30px 0 0 0 ;
+    border-radius: 40px;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.eligibility_calculator_inner{
+  margin: 50px 0;
+}
+/*  */
+.eligibility_title{
+    width: 80%;
+    margin: 0  auto;
+    padding: 40px 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .eligibility_title_img{
+    width:10%
+  }
+  .eligibility_title_img img{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .eligibility_body{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  .eligibility_body_left{
+    width: 50%;
+    padding: 30px;
+  }
+  .eligibility_body_inner{
+    background-color: #fff;
+    padding: 30px;
+  }
+  .eligibility_body_left label{
+    display: block;
+    margin: 20px 0 10px 0;
+  }
+  .eligibility_conts{
+    width: 100%;
+  }
+  .eligibility_conts > div{
+    width: 100%;
+  }
+  .eligibility_body_inner input{
+    padding: 10px;
+    width: 100%;
+    padding: 16px 10px !important;
+  }
+  #eligibility_property_amount{
+    margin: 0 !important;
+    width: 100%;
+    text-align: left;
+  }
+  .intrest_percentage input{
+      border-radius: 8px;
+      width: 150px;
+      outline: none;
+    }
+    #intrest_percentage{
+      height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, rgb(219, 169, 83) 0%, rgb(219, 169, 83) 8.69565%, rgb(222, 226, 230) 8.69565%, rgb(222, 226, 230) 100%);
+  }
+  .eligibility_property_price > div{
+    display: flex;
+  }
+  
+  .eligibility_downpayment p {
+    font-size: 14px;
+    margin: 20px 0;
+    text-align: center;
+    width: 100%; 
+  }
+  .intrest_percentage .range_values,  .range_length_year .range_values{
+    display: flex;
+    margin: 10px 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .eligibility_property_dec{
+    background-color: #DBA953;
+    padding: 10px 13px;
+    border-radius: 5px;
+    display: inline;
+    cursor: pointer;
+  }
+  .eligibility_property_price > div > input{
+    border: none;
+    outline: none;
+    background-color: #edeff1;
+  }
+  .eligibility_downpayment{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+  }
+  .eligibility_downpayment div:nth-child(1){
+    width: 70%;
+  }
+  .eligibility_downpayment input{
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #dcdcdc;
+    padding: 12px 10px;
+  }
+  .eligibility_downpayment div:nth-child(2){
+    width: 30%;
+    border-radius: 5px;
+  }
+  #down_payment_percentage{
+    color: #BC892A;
+  }
+  .intrest_percentage{
+    margin: 30px 0 40px 0;
+  }
+  .range-percentage-element{
+    display: flex;
+    justify-content: space-between;
+  }
+  #range-percentage {
+    background: linear-gradient(to right, rgb(219, 169, 83) 0%, rgb(219, 169, 83) 8.69565%, rgb(222, 226, 230) 8.69565%, rgb(222, 226, 230) 100%);
+    padding: 0;
+  }
+  .year_length{
+    margin: 20px 0;
+  }
+  .mortgage_length input{
+    outline: none;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+  }
+  .range_length_year{
+    margin: 40px 0;
+  }
+  .range_length_year > div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    justify-content: space-between;
+  }
+  #range_length_year{
+    width: 100%;
+  }
+  .eligibility_body_right{
+    width: 50%;
+    padding: 30px 50px ;
+  }
+  .mortgage_products_models {
+    margin: 50px 0;
+  }
+  .mortgage_products_models > div{
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0;
+  }
+  .year_3_mortgage ,.year_5_mortgage,.variable_mortgage{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-radius: 20px;
+  }
+  .year_3_mortgage > div,.year_5_mortgage > div, .variable_mortgage > div {
+    width: 33.3%;
+    padding: 10px;
+    text-align: center;
+  }
+  .mortgage_button{
+    width: 100% !important;
+  }
+  .mortgage_button{
+    padding: 20px 50px !important;
+  }
+  .mortgage_button h4{
+    border-radius: 6px;
+    padding: 10px 15px;
+    background-color: #BC892A;
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  .Eligibility_qualify input{
+    text-align: left !important;
+    padding: 12px !important;
+    margin: 10px 0 !important;
+    width: 100% !important;
+  }
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+
+  .progress-bar {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 10% 0% 10%;
+  }
+ 
+  .progress-item {
+    padding: 16px 24px;
+    align-items: center;
+    flex: 1 0 0;
+    background-color: white;
+  }
+  .Myapplications{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 150px 0;
+  }
+  .Myapplication-1 li{
+    display: flex;
+    margin: 50px;
+    gap: 0 20px;
+    align-items: center;
+  }
+  .application_number{
+    padding: 13px 15px;
+    border: 1px solid #151a26;
+    color: #151a26;
+    position: relative;
+    border-radius: 50px;
+
+  }
+
+  .application_number1{
+    padding: 10px 15px;
+    background-color: #DBA953;
+    border-radius: 50px;
+    border: 1px solid #DBA953 !important;
+    color: #fff;
+  }
+  .application_number1::before{
+    content: "";
+    width: 1px;
+    height: 60%;
+    position: absolute;
+    display: block;
+    background-color: #151a26;
+    z-index: 1;
+    bottom: -70%;
+    left: 50%;
+  }
+  .application_number2::before{
+    content: "";
+    width: 1px;
+    height: 60%;
+    position: absolute;
+    display: block;
+    background-color: #151a26;
+    z-index: 1;
+    bottom: -70%;
+    left: 50%;
+  }
+
+  .Myapplication-1{
+    width: 35%;
+    display: inline-block;
+    background-color: #fff;
+    margin-left: 20px;
+  }
+
+  .form-wrap {
+    background-color: white;
+    /* padding: 45px 0px; */
+    width: 60%;
+    display: inline-block;
+    min-height: 430px;
+    margin: 0% auto;
+  }
+ 
+  .form-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    margin-left: 8%;
+    /* margin-right: auto; */
+    padding: 30px;
+    margin: auto;
+    width: 80%;
+    grid-column-gap: 170px;
+  }
+ 
+  .input_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ 
+  .btns_wrap {
+    width: 100%;
+    padding: 0 100px;
+    height: 92px;
+    /* margin: 0% 10%; */
+    background: #FBFBFB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btns_wrap Button{
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding:5px 15px;
+    color: #000;
+  }
+  .btns_wrap Button:nth-child(1) a{
+    color: #000 !important;
+  }
+  .btns_wrap Button:nth-child(2){
+    background-color: #DBA953 !important;
+    border: 1px solid #DBA953 !important;
+    color: #fff !important;
+  }
+  .css-13xfq8m-MuiTabPanel-root{
+    padding: 0 !important;
+  }
+  .eligibility_login a{
+    color: #fff;
+  }
+  .Eligibility_page a{
+    color: #fff;
+  }
+  .breakdown{
+    text-align: left;
+  }
+  .breakdown h3{
+    margin: 30px 0 20px 0;
+  }
+  .breakdown div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  .eligibility_inputs input{
+    padding: 16px 10px;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #dcdcdc;
+    margin: 10px 0;
+}
+.eligibility_tab{
+  cursor: pointer;
+}
+  @media only screen and (max-width:1024px){
+    .eligibility_calculator_cont, .eligibility_mortgage_cont{
+      width: 100%;
+    }
+    .overview_header > div >div{
+      width: 100%;
+      padding: 0 20px;
+    }
+    .overview_header .header_logo{
+      width: 120px;
+      padding: 20px 0 0 0 ;
+    }
+    .form-content{
+      grid-column-gap: 50px;
+    }
+    .Myapplication-1 h2{
+      font-size: 22px;
+    }
+  }
+  @media only screen and (max-width:768px){
+    .eligibility_cal_left{
+      width: 100%;
+    }
+    .eligibility_cal_right{
+      width: 100%;
+    }
+    .eligibility_mortgage_cont > div{
+      width: 100%;
+    }
+    .eligibility_title_img{
+      width: 20%;
+    }
+    .eligibility_title h1{
+      width: 80%;
+    }
+    .eligibility_body_left,.eligibility_body_right{
+      width: 100%;
+    }
+    .Myapplication-1{
+      width: 60%;
+      margin-left: 0;
+    }
+    .Myapplications .form-wrap{
+      width: 80%;
+    }
+    .overview_header{
+      display: none;
+    }
+  }
+  @media only screen and (max-width:480px){
+    .eligibility_downpayment div:nth-child(1){
+      width: 65%;
+    }
+    .eligibility_downpayment div:nth-child(2){
+      width: 35%;
+    }
+  }
+

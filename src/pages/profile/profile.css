@@ -1,0 +1,541 @@
+#Profile{
+    margin: 100px auto;
+}
+.Profile_page{
+    padding: 50px;
+    background-color: #f1f3f9;
+}
+.profile_page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.profile_dash{
+    width: 25%;
+}
+.profile_dash ul{
+    display: flex;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    padding: 30px;
+    /* padding-left:30px ; */
+    border-radius: 5px;
+}
+.profile_dash ul li{
+    display: flex;    
+    gap: 20px;
+    align-items: center;
+}
+.profile_dash ul li i{
+    color: #d6d6d6;
+}
+.profile_dash ul li:nth-child(1) i{
+    color: #d3ab61;
+}
+.profile_dash ul li a{
+    color: #000;
+}
+/*  */
+.profile_cont{
+    width: 70%;
+    background-color: #f9f3ea;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+    border-radius: 20px;
+}
+.personal_info{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.personal_information{
+    width: 50%;
+}
+.personal_info_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.personal_inputs > div{
+    margin: 20px 0;
+}
+.personal_inputs label{
+    margin-left: 5px;
+}
+.personal_profile{
+    width: 30%;
+    text-align: center;
+}
+.presonal_profile_image{
+    position: relative;
+    display: inline-block;
+}
+.personal_profile_edit{
+    position: absolute;
+    bottom: 35px;
+    right: 20px;
+}
+.personal_profile_city{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 5px 0;
+}
+.personal_profile_btn{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 5px;
+}
+.personal_profile_btn Button{
+    background-color: #d3ab61;
+    text-transform: capitalize;
+    color: #fff;
+    transition: .5s;
+}
+.personal_profile_btn Button:hover{
+    background-color: #000;
+    color: #d3ab61;
+    transition: .5s;
+}
+.personal_profile_btn p{
+    padding: 20px 0;
+    border-bottom: 1px solid #d3ab61;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    transition: .5s;
+}
+.personal_profile_btn p::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #d3ab61;
+    transform: translateY(100%);
+    transition: .5s;
+    border-radius: 10px 10px 0 0;
+}
+.personal_profile_btn p:hover{
+    color: #fff;
+    transition: .5s;
+}
+.personal_profile_btn p:hover::before{
+    transform: translate(0);
+    transition: 0.5s;
+}
+
+
+.profile_charts{
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+.profile_charts > div{
+    width: 50%;
+    padding: 20px;
+}
+.personal_bar_chart,.personal_pie_chart{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.bar_chart_title,.pie_chart_title{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile_charts .chart{
+    margin: 8px 0;
+}
+.bar_chart_title > div{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    width: 50%;
+}
+.bar_chart_title h3,.pie_chart_title h3{
+    color: #6174a5;
+}
+.bar_chart_title p,.pie_chart_title p{
+    border: 1px solid #6174a5;
+    padding: 2px 10px ;
+    border-radius: 5px;
+}
+/*  */
+.pending{
+    background-color: #fff;
+    padding: 20px 0;
+    border-radius: 20px;
+}
+.pending_inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.pending_cont{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    justify-content: end;
+}
+.pending_cont::before{
+    content: "";
+    width: 2px;
+    height: 50%;
+    background-color: #6174a5;
+    right: -25px;
+    position: absolute;
+    top: 25%;
+}
+.pending_cont:nth-child(4)::before{
+    width: 0;
+    height: 0;
+}
+.pending_cont:nth-child(1) h1{
+    color: #4a67b6;
+}
+.pending_cont:nth-child(2) h1{
+    color: #c3943b;
+}
+.pending_cont:nth-child(3) h1{
+    color: #ff0000;
+}
+.pending_cont:nth-child(4) h1{
+    color: #047857;
+}
+.pending_circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #e0f0e8;
+}
+.mypayment_inner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+}
+.mypayment_title{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.mypayment .add_btn{
+    color: #c3943b;
+}
+.mypayment_title2{
+    display: flex;
+    gap: 20px;
+}
+.mypayment_title2 Button{
+    display: flex;
+    gap: 10px ;
+}
+.mypayment_title2 Button:nth-child(1){
+    padding: 5px 15px ;
+    border: 1px solid #d0d5dd;
+    color: #1b1633;
+    border-radius: 5px;
+}
+/*  */
+.mypayment{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+.mypayment_years{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+.mypayment_cont{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+}
+.mypayment_cont::before{
+    content: "";
+    width: 2px;
+    height: 50%;
+    background-color: #6174a5;
+    right: -25px;
+    position: absolute;
+    top: 25%;
+}
+.mypayment_cont:nth-child(4)::before{
+    width: 0;
+    height: 0;
+}
+.mypayment_cont h2{
+    color: #047857;
+}
+.mypayment_circle{
+    background-color: #e0f0e8;
+    padding: 15px 17px;
+    border-radius: 30px;
+}
+.mypayment_search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mypayment_search > div{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    width: 30%;
+}
+.mypayment_search div:nth-child(1){
+    position: relative;
+    width: 50%;
+}
+.mypayment_search div:nth-child(1) i{
+    position: absolute;
+    z-index: 2;
+    top: 41%;
+    left: 30px;
+}
+.mypayment_search input{
+    box-shadow: 0 0 10px #c0c0c0;
+    text-indent: 20px;
+}
+.mypayment_search div{
+    justify-content: end;
+}
+.mypayment_table table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.mypayment_table td{
+    padding: 10px 0;
+}
+.mypayment_table Button{
+    padding:5px 15px ;
+    border-radius: 5px;
+}
+.mypayment_table a{
+    display: none;
+}
+button.unpay{
+    background-color: #e7eaee;
+    color: #64748b;
+}
+button.unpay:hover{
+    background-color: #e7eaee;
+    color: #000;
+}
+button.pay{
+    background-color: #bc892a;
+    color: #fff;
+}
+button.pay:hover{
+    background-color: #bc892a;
+    color: #000;
+}
+.mypayment_table input{
+    box-shadow: 0 0 0
+}
+.personal_bar_chart svg{
+    width: 100% !important;
+}
+.personal_pie_chart svg{
+    width: 100% !important;
+}
+/* bar chart */
+    .personal_bar_chart{
+        text-align: center;
+    }
+/* bar chart */
+
+.close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+@media only screen and (max-width:1024px){
+
+    .profile_dash{
+        width: 100%;
+    }
+    .profile_cont{
+        width: 100%;
+    }
+    .personal_profile{
+        width: 40%;
+    }
+    .profile_charts > div{
+        padding: 10px;
+    }
+    .mypayment_years{
+        gap: 20px 0;
+    }
+    .mypayment_years > div{
+        width: 33.3%;
+    }
+   .mypayment_cont::before{
+        right: 25px;
+   }
+}
+@media only screen and (max-width:768px){
+    .Profile_page{
+        padding: 20px;
+    }
+    .bar_chart_title > div{
+        align-items: center;
+    }
+    .personal_bar_chart,.personal_pie_chart{
+        padding: 10px;
+    }
+    .pending_content h1{
+        font-size: 25px;
+    }
+    .pending_content p{
+        font-size: 15px;
+    }
+    .pending_cont::before{
+        right: 5px;
+    }
+    .mypayment_years{
+        gap: 40px 0;
+    }
+    .mypayment_years > div{
+        width: 50%;
+        justify-content: left;
+    }
+    .mypayment_cont::before{
+        display: none;
+    }
+    .mypayment_table{
+        width: 100%;
+        overflow: auto;
+    }
+    .mypayment_table table{
+        width: 250%;
+    }
+}
+@media only screen and (max-width:480px){
+    .personal_information{
+        width: 100%;
+    }
+    .personal_info{
+        flex-direction: column;
+        display: none;
+    }
+    .profile_cont{
+        width: 100% ;
+        padding: 0;
+    }
+    .profile_charts{
+        flex-direction: column;
+    }
+    .pending{
+        background-color: transparent;
+        padding: 10px;
+    }
+    .pending_inner{
+        padding: 0 20px;
+        background-color: #fff;
+        border-radius: 20px;
+    }
+    .pending_inner > div{
+        width: 100%;
+    }
+    .pending_cont{
+        justify-content: center;
+        border-bottom: 1px solid #6174a5;
+    }
+    .pending_cont:nth-last-child(1){
+        border: none;
+    }
+    .pending_cont::before{
+        width: 0;
+    }
+    .profile_charts > div{
+        width: 100%;
+    }
+    .mypayment{
+        background-color: transparent;
+        padding: 10px;
+    }
+    .mypayment_inner{
+        background-color: #fff;
+        border-radius: 20px;
+    }
+    .mypayment_title{
+        gap: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .mypayment_title2{
+        flex-direction: column;
+    }
+    .mypayment_search div:nth-child(1) {
+        width: 100%;
+    }
+
+    .mypayment_search{
+        flex-direction: column;
+    }
+    .mypayment_years{
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+    .mypayment_years > div{
+        width: 100%;
+        /* justify-content: center; */
+    }
+    .mypayment_table{
+        width: 100%;
+        overflow: auto;
+    }
+    .mypayment_table table td:nth-child(1) button{
+        display: none;
+    }
+    .mypayment_inner{
+        padding: 30px 0 30px ;
+    }
+    .mypayment_table table td:nth-child(1) a{
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: inline-block;
+    }
+    a.unpay{
+        background-color: #e7eaee;
+        color: #64748b;
+    }
+    a.unpay:hover{
+        background-color: #e7eaee;
+        color: #000;
+    }
+    a.pay{
+        background-color: #bc892a;
+        color: #fff;
+        padding: 0;
+    }
+    a.pay:hover{
+        background-color: #bc892a;
+        color: #000;
+    }
+}

@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style:none;
+    text-decoration: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+
+.otp_page{
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 50px;
+}
+.login_otp{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #a7a7a7;
+    background-color: #fff;
+    justify-content: end;
+    padding:180px 50px 130px 50px;
+    margin: 50px 0 0 0;
+    background-image: url(../../images/login.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.otp_left{
+    width: 50%;
+}
+.otp_page_banner{
+    width: 100%;
+}
+.otp_page_banner img{
+    width: 100%;
+    border-radius: 30px 0 0 30px;
+}
+.otp_right{
+   width: 40%;
+   color: #fff;
+   backdrop-filter: blur(40px);
+   text-align: center;
+   border-radius: 20px;
+   border: 10px solid transparent;
+}
+.otp_logo{
+    width: 80px;
+    margin-left: 15%;
+}
+.otp_logo img{
+    width: 100%;
+}
+.otp_form{
+    width: 90%;
+    margin: 30px auto;
+    /* padding: 50px 0; */
+}
+.otp_title {
+    margin: 20px 0 50px 0;
+}
+.otp_title P{
+    font-size: 15px;
+}
+.otp_codes{
+    display: flex;
+    justify-content: center;
+}
+.otp_codes input{
+    width: 30px; 
+    height: 35px;
+    text-align: center;
+    border: 2px solid #d0cfcf;
+    outline: none;
+    border-radius: 5px;
+    margin: 0 5px 0 0;
+    background-color: #ececec;
+    box-shadow: 0 0 15px #d0cfcf inset;
+}
+.otp_resend{
+    text-align: center;
+    margin: 25px 0 15px 0;
+}
+.otp_resend span{
+    color: #DBA953;
+}
+.otp_verify{
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #DBA953;
+    padding: 10px;
+    border-radius: 5px;
+}
+.otp_verify a{
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+.otpContainer {
+    text-align: center;
+}
+input.otpInput {
+    width: 30px !important;
+    margin: 0 10px;
+    color: #000 !important;
+    padding: 0;
+    height: 35px;
+    text-align: center;
+    background-color: #fff;
+    border: #D9D9D9 1px solid;
+    box-shadow: 0 0 10px #D9D9D9 inset;
+    outline: none;
+    border-radius: 5px;
+}
+@media only screen and (max-width:1200px){
+    .otp_form{
+        width: 100%;
+    }
+    .otp_logo{
+        margin-left: 15%;
+    }
+    .otp_title{
+        margin-left: 15%;
+
+    }
+}
+@media only screen and (max-width:768px){
+    .otp_left{
+        display: none;
+    }
+    .otp_right{
+        width: 100%;
+    }
+    .otp_title h1{
+        font-size: 20px;
+    }
+    .otp_title p{
+        font-size: 12px;
+        margin: 10px 0;
+    }
+}
+@media only screen and (max-width:480px){
+    .otp_page{
+        padding: 30px 10px;
+    }
+    .login_otp{
+        padding: 50px 10px;
+    }
+}

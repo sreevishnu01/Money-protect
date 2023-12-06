@@ -1,0 +1,298 @@
+.Success{
+    background-color: #f1f3f9;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.container {
+    width: 75%;
+    margin: 0 auto;
+    background-color: #f1f3f9;
+}
+.container > h1{
+    margin: 20px 0 40px 0;
+}
+.income_dash{
+    width: 25%;
+    padding: 10px 50px;
+}
+.income_dash ul{
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 10px #cdcdcd;
+    border-radius: 5px;
+}
+.income_dash ul li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.income_dash ul li i{
+    color: #bdbec2;
+}
+.income_dash ul li:nth-child(2) i{
+    color: #d3ab61;
+}
+/*  */
+.income_verify{
+    width: 75%;
+    padding: 0 20px;
+}
+.status_sect {
+    width: 80%; 
+    margin: 0 auto;
+    padding: 30px;
+}
+.status_heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.status_heading p {
+    padding-bottom: 5px;
+    color: #DBA953;
+    font-size: 15px;
+    border-bottom: 2px solid #DBA953;
+}
+.new-Appli {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.new-Appli > div {
+    width: 15px;
+    height: 15px;
+}
+.new-Appli > div img {
+    width: 100%;
+}
+.name_sect {
+    background-color: #F9f3ea;
+    border: 1px solid #F9f3ea;
+    border-radius: 20px;
+    margin: 40px 0px;
+    padding: 20px;
+}
+.appli .top_row {
+    display: flex;
+    gap: 30px;
+    padding: 20px 0px;
+}
+.appli .top_row .review_set {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.appli .top_row .review_set > div {
+    width: 15px;
+    height: 15px;
+}
+.review_set > div img {
+    width: 100%;
+}
+.review_set p {
+    font-size: 14px;
+    color: #DBA953;
+    font-weight: bold;
+}
+.remot .refer {
+    display: flex;
+    gap: 35px;
+}
+.remot .refer .reference {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+.name_sect .view_more {
+    padding: 20px 0px;
+    display: flex;
+    gap: 10px;
+    color: #DBA953;
+    justify-content: center;
+}
+.name_sect .view_more span {
+    width: 15px;
+    height: 15px;
+}
+.name_sect .remot .del_icon {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+.name_sect .remot .del_icon .del, .pin {
+    width: 20px;
+    height: 20px;
+}
+.name_sect .remot .del_icon .del img, .pin img {
+    width: 100%;
+}
+.name_sect .remot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 10px 20px;
+    border-bottom: 1px solid rgb(181, 180, 180);
+}
+.red_clr {
+    color: #bf0000 !important;
+}
+.green_clr {
+    color: #4a67ba !important;
+}
+.blue_clr {
+    color: #077741 !important;
+}
+.gold_clr {
+    color: #DBA953;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #DBA953;
+}
+
+/* css responsive */ 
+
+@media only screen and (max-width:1024px) {
+    
+    .income_dash{
+        width: 100%;
+    }
+    .income_verify{
+        width: 100%;
+    }
+    .status_sect {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .top_row h3 {
+        font-size: 18px;
+    }
+    .appli .top_row .review_set > div {
+        width: 13px;
+        height: 13px;
+    }
+    .review_set p {
+        font-size: 12px;
+    }
+    .reference h6 {
+        font-size: 12px !important;
+    }
+    .view_more h5 {
+        font-size: 12px !important;
+    }
+    .view_more span {
+        width: 13px !important;
+        height: 13px !important;
+    }
+    .gold_clr {
+        font-size: 14px !important;
+        border-bottom: 1px solid #DBA953 !important;
+    }
+}
+@media only screen and (max-width:980px) {
+    .status_sect {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .top_row h3 {
+        font-size: 18px;
+    }
+    .appli .top_row .review_set > div {
+        width: 13px;
+        height: 13px;
+    }
+    .review_set p {
+        font-size: 12px;
+    }
+    .reference h6 {
+        font-size: 12px !important;
+    }
+    .view_more h5 {
+        font-size: 12px !important;
+    }
+    .view_more span {
+        width: 13px !important;
+        height: 13px !important;
+    }
+    .gold_clr {
+        font-size: 14px !important;
+        border-bottom: 1px solid #DBA953 !important;
+    }
+    .name_sect{
+        margin: 20px 0;
+    }
+}
+@media only screen and (max-width:768px) {
+    .Success{
+        padding: 20px;
+    }
+    .income_dash{
+        padding: 20px;
+    }
+    .status_sect {
+        width: 100%;
+        padding: 0;
+    }
+    .name_sect_par{
+        width: 100%;
+        overflow: auto;
+    }
+    .name_sect{
+        width: 800px !important;
+    }
+    .top_row h3 {
+        font-size: 18px;
+    }
+    .appli .top_row .review_set > div {
+        width: 13px;
+        height: 13px;
+    }
+    .review_set p {
+        font-size: 12px;
+    }
+    .reference h6 {
+        font-size: 12px !important;
+    }
+    .view_more h5 {
+        font-size: 12px !important;
+    }
+    .view_more span {
+        width: 13px !important;
+        height: 13px !important;
+    }
+    .gold_clr {
+        font-size: 12px !important;
+        border-bottom: 1px solid #DBA953 !important;
+    }
+}
+
+
+
+@media only screen and (max-width:480px){
+    .Income{
+        width: 100%;
+        padding: 10px;
+    }
+    .status_sect {
+        width: 100%;
+    }
+    .name_sect_par{
+        width: 100%;
+        overflow: auto;
+    }
+    .name_sect{
+        width: 768px !important;
+    }
+    .status_heading h2 {
+        font-size: 18px;
+    }
+    .status_heading p {
+        font-size: 13px;
+        border-bottom: 1px solid #DBA953;
+    }
+}
