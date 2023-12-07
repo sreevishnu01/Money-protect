@@ -32,7 +32,6 @@ function App() {
       <Header/>
         <Routes>
           <Route path={"/Money-protect"} element={<Home/>}/>
-          {/* <Route path={"/Money-protect"} element={<Money_protect/>}/> */}
           <Route path={"/otp"} element={<Otp/>}/>
           <Route path={"/login"} element={<Login/>} />
           <Route path={"/idverification"} element={<Idverification/>} />
