@@ -1,10 +1,14 @@
 .Mui-selected{
-    background-color: #151a26 !important;
-    background-color: #10141e !important;
-    color: #fff !important;
+  background-color: #151a26 !important;
+  background-color: #10141e !important;
+  color: #fff !important;
 }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-
+.eligibility_calculator h1,.eligibility_calculator h2,.eligibility_calculatorh3,.eligibility_calculator h4,.eligibility_calculator h5,.eligibility_calculator h6{
+  /* font-family: "Inter"; */
+  /* font-weight: 700; */
+}
 .css-eg0mwd-MuiSlider-thumb {
   background: radial-gradient(white 30%, #DBA953 40%);
   width:120px;

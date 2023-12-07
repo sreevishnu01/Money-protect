@@ -10,6 +10,7 @@ body{
     /* max-width: 1440px; */
     margin: 0 auto;
     font-family: 'inter';
+    font-weight: 400 ;
 }
 .Home{
     padding: 0 100px ;
