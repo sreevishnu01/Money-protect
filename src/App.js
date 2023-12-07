@@ -14,6 +14,7 @@ import Loan from "./pages/myapplication/loan/loan";
 import Agreement from "./pages/myapplication/agree/agree";
 import Close from "./pages/profile/close";
 import Success from "./pages/myapplication/success/success";
+import Money_protect from "./pages/home/moneyprotect";
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
       <Header/>
         <Routes>
           <Route path={"/"} element={<Home/>}/>
+          <Route path={"/Money-protect"} element={<Money_protect/>}/>
           <Route path={"/otp"} element={<Otp/>}/>
           <Route path={"/login"} element={<Login/>} />
           <Route path={"/idverification"} element={<Idverification/>} />
