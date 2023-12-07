@@ -22,7 +22,7 @@ export default function(){
                 </div>
                 <nav className={`header_menu ${isToggled ? 'active' : ""}`} >
                     <ul>
-                        <li><Link to={"/"}>Home</Link></li>
+                        <li><Link to={"/Money-protect"}>Home</Link></li>
                         <li><Link>What We Do <i class="fa fa-angle-down" aria-hidden="true"></i></Link></li>
                         <li><Link>Who We Are <i class="fa fa-angle-down" aria-hidden="true"></i></Link></li>
                         <li><Link>Contact Us</Link></li>
