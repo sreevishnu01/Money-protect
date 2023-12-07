@@ -27,14 +27,14 @@ export default function Home() {
         labels: ["Jan ", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         datasets: [
           {
-            label: 'Tesla',
+            label: 'Downtown',
             data: [10,15,11,16,12,17,13,18,14,19,15,13,10],
             backgroundColor: '#fd1111',
             borderColor: '#fd1111',
             pointRadius: 0, 
           },
           {
-            label: 'Google',
+            label: 'Business Bay ',
             data: [11,16,12,17,14,18,15,20,16,21,19,14],
             backgroundColor: '#022cb7',
             borderColor: '#022cb7',
@@ -42,7 +42,7 @@ export default function Home() {
             pointRadius: 0, 
           },
           {
-            label: 'Meta',
+            label: 'Al Jadaf',
             data: [12,17,13,18,16,19,16,21,17,22,20,15],
             backgroundColor: '#fee50a',
             borderColor: '#fee50a',
@@ -50,7 +50,7 @@ export default function Home() {
             pointRadius: 0, 
           },
           {
-            label: 'Netflix',
+            label: 'Marina',
             data: [13,18,14,19,17,20,17,22,18,23,21,16],
             backgroundColor: '#6de50e',
             borderColor: '#6de50e',
@@ -58,7 +58,7 @@ export default function Home() {
             pointRadius: 0, 
           },
           {
-            label: 'Microsoft',
+            label: 'Others',
             data: [14,19,15,20,18,21,18,23,19,24,22,17],
             backgroundColor: '#000',
             borderColor: '#000',

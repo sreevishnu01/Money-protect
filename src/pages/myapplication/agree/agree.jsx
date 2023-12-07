@@ -28,7 +28,7 @@ export default function Agreement() {
     
       const handleClose = () => {
         setOpen(false);
-        window.location.href = 'successfull';
+        window.location.href = 'profiledetail';
       };
 
       const handleScroll = () => {
