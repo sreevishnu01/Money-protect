@@ -28,7 +28,7 @@ export default function Agreement() {
     
       const handleClose = () => {
         setOpen(false);
-        window.location.href = 'profiledetail';
+        // window.location.href = 'profiledetail';
       };
 
       const handleScroll = () => {
@@ -228,7 +228,7 @@ export default function Agreement() {
                                         </p>
                                     </div>
                                     <div>
-                                        <Link className='rediect' to={'/profiledetail'}><i  class="fa fa-times" aria-hidden="true"></i></Link>
+                                        <Link className='rediect' to={"/profiledetail"}><i  class="fa fa-times" aria-hidden="true"></i></Link>
                                     </div>
                                 </div>
                             </div>
