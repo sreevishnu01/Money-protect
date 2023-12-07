@@ -228,7 +228,7 @@ export default function Agreement() {
                                         </p>
                                     </div>
                                     <div>
-                                        <i onClick={handleClose} class="fa fa-times" aria-hidden="true"></i>
+                                        <Link className='rediect' to={'/profiledetail'}><i  class="fa fa-times" aria-hidden="true"></i></Link>
                                     </div>
                                 </div>
                             </div>

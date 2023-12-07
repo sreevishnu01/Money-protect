@@ -264,6 +264,9 @@
 .income_dash ul li a{
     color: #000;
 }
+.success_submit .redirect{
+    color: #000;
+}
 /* css responsive */
 
 
