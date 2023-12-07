@@ -14,7 +14,6 @@ import Loan from "./pages/myapplication/loan/loan";
 import Agreement from "./pages/myapplication/agree/agree";
 import Close from "./pages/profile/close";
 import Success from "./pages/myapplication/success/success";
-import Money_protect from "./pages/home/moneyprotect";
 
 function App() {
 
