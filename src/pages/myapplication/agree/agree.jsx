@@ -38,7 +38,7 @@ export default function Agreement() {
     return (
         <div id="Income">
             <div className="Agree">
-                <div className="income_dash">
+                {/* <div className="income_dash">
                     <ul>
                         <li><i class="fa fa-circle" aria-hidden="true"></i><Link to={"/profiledetail"}> <h3>Profile Details</h3> </Link></li>
                         
@@ -48,7 +48,7 @@ export default function Agreement() {
                         
                         <li><i class="fa fa-circle" aria-hidden="true"></i><Link> <h3>Settings</h3></Link></li>
                     </ul>
-                </div>
+                </div> */}
                 <div className="income_verify">
                     <div class="general_container">
                         <div class="general_info">
