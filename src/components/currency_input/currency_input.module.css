@@ -1,0 +1,20 @@
+.container {
+    background-color: #f1f3f980;
+    border-radius: 4px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+    border: 1px solid #151A2614
+
+}
+
+.label {
+    display: inline-block;
+    color: #151a26;
+    font-weight: 500;
+    font-size: 14px;
+    opacity: 0.6;
+    margin-bottom: 8px;
+  }

@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 150px;
 }
 
 .container p {
@@ -15,6 +16,7 @@
     text-align: center;
     font-size: 12px;
     font-weight: 400;
+    margin-top: 12px;
 }
 
 .container span {

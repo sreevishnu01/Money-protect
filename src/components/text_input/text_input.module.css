@@ -1,13 +1,13 @@
 .label {
-    display: inline-block;
- color: #151A26;
- font-weight: 500;
- font-size: 14px;
- opacity: 0.6;
- margin-bottom: 8px;
+  display: inline-block;
+  color: #151a26;
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 0.6;
+  margin-bottom: 8px;
 }
 
 .textField {
-    width: 100%;
-    background-color: #F1F3F980;
+  width: 100%;
+  background-color: #f1f3f980;
 }
