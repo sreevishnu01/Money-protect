@@ -1,0 +1,22 @@
+.container {
+    background-color: #F1F3F980;
+    width: 100%;
+    height: 100%;
+    border: 1px dashed #151A2680;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p {
+    max-width: 80%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.container span {
+    color: #C8983F;
+}

@@ -78,6 +78,7 @@
 
 .formBody {
   flex: 1;
+  padding: 24px;
 }
 
 .footer {

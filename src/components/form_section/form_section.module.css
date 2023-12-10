@@ -1,0 +1,28 @@
+.container {
+    background-color: white;
+    min-height: 100px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.container h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #151A26;
+    margin-bottom: 16px;
+}
+
+.container hr {
+    color: black;
+    opacity: 0.1;
+    margin-bottom: 16px;
+}
+
+.formElements {
+    display: flex;
+    padding: 12px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 12px;
+    height: 85%;
+}
