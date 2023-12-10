@@ -1,18 +1,25 @@
-import './idverify.css';
+import './idverify.css'
 
-import FormScafold from '../../../components/form_scafold/form_scafold';
-
-import { Link } from 'react-router-dom';
-import upload from '../../images/upload.png';
-import scan from '../../images/scan.png';
-import { Button } from '@mui/material';
-import { useState } from 'react';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import FormScafold from '../../../components/form_scafold/form_scafold'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function Idverification() {
+    const [isLoading, setIsLoading] = useState(false)
+
+    const navigate = useNavigate()
+
+    const hadnleSubmit = () => {
+        setIsLoading(true)
+        setTimeout(() => {
+            setIsLoading(false)
+            navigate('/income')
+        }, 3000)
+    }
+
     return (
         <div className='Idverification'>
-            <FormScafold step={1} />
+            <FormScafold step={1} onSubmit={hadnleSubmit} loading={isLoading} />
         </div>
     )
 } 

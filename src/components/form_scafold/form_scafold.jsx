@@ -1,7 +1,12 @@
 import classes from './form_scafold.module.css'
+import { CircularProgress } from '@mui/material'
 import StyledPrimaryButton from '../styled/styled_primary_btn'
+import { useNavigate } from 'react-router-dom'
 
-const FormScafold = ({ step = 1, children, onSubmit = () => { } }) => {
+const TOTAL_STEPS = 4
+
+const FormScafold = ({ step = 1, loading = false, children, onSubmit = () => { } }) => {
+    const navgate = useNavigate()
     const doneIconSVG = (
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="40" height="40" rx="20" fill="#D3AB61" fill-opacity="0.2" />
@@ -10,11 +15,16 @@ const FormScafold = ({ step = 1, children, onSubmit = () => { } }) => {
     )
     return (
         <div className={classes.container}>
+            {loading && (
+                <div className={classes.loadingIndicator}>
+                    <CircularProgress size={60} style={{ color: '#D3AB61' }} />
+                </div>
+            )}
             <div className={classes.headerContainer}>
                 <h2>New Application</h2>
             </div>
             <div className={classes.stepHeader}>
-                <div className={classes.progress} style={{ width: `${(step / 5) * 100}%` }} />
+                <div className={classes.progress} style={{ width: `${(step / (TOTAL_STEPS + 1)) * 100}%` }} />
                 <div className={classes.steps}>
                     <div className={classes.stepItem}>
                         {step > 1 ? doneIconSVG : (
@@ -74,8 +84,15 @@ const FormScafold = ({ step = 1, children, onSubmit = () => { } }) => {
             </div>
             <div className={classes.formBody}>{children}</div>
             <div className={classes.footer}>
-                <StyledPrimaryButton variant='text'>Save as Draft</StyledPrimaryButton>
-                <StyledPrimaryButton onClick={onSubmit}>Continue</StyledPrimaryButton>
+                <div>
+                    {step !== 1 && (<StyledPrimaryButton variant='outlined' onClick={() => navgate(-1)}>Go Back</StyledPrimaryButton>)}
+                </div>
+                <div>
+                    <StyledPrimaryButton variant='text'>Save as Draft</StyledPrimaryButton>
+                    <StyledPrimaryButton onClick={onSubmit}>
+                        {step == TOTAL_STEPS ? "Pay now" : "Continue"}
+                    </StyledPrimaryButton>
+                </div>
             </div>
         </div>
     )
