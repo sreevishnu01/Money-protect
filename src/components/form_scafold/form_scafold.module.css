@@ -1,0 +1,75 @@
+.container {
+  height: 90%;
+  width: 100%;
+  margin-top: 60px;
+  background-color: #f1f3f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerContainer {
+  background: linear-gradient(270deg, #0b1c47 0%, #151a26 100%);
+  color: white;
+  padding: 12px 32px;
+}
+
+.headerContainer h2 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 400;
+  /* font-family: ; */
+}
+
+.stepHeader {
+  background-color: white;
+}
+
+.progress {
+  width: 33%;
+  height: 5px;
+  background-color: #d3ab61;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.stepItem {
+  display: flex;
+  padding: 16px 0;
+  align-items: center;
+  gap: 4px;
+}
+
+.stepSeparator {
+  background-color: #f1f3f9;
+  height: 1px;
+  width: 60px;
+}
+
+.stepItem h6 {
+  opacity: 0.5;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.stepItem h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.formBody {
+  flex: 1;
+}
+
+.footer {
+  background-color: white;
+  padding: 12px 64px;
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+}
