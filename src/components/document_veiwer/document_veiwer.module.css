@@ -1,0 +1,41 @@
+.container {
+    background-color: #F1F3F980;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #151A2614;
+}
+
+.documentContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 0.7px solid #151A2614;
+    padding: 12px;
+
+}
+
+.nameContainer h6 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.nameContainer p {
+    font-size: 14px;
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+.btnContainer {
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnContainer a {
+    color: #DBA953;
+    font-size: 16px;
+    font-weight: 600;
+}
