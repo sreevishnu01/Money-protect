@@ -29,6 +29,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
+          <Route path={"/"} element={<Home />} />
           <Route path={"/Money-protect"} element={<Home />} />
           <Route path={"/otp"} element={<Otp />} />
           <Route path={"/login"} element={<Login />} />
