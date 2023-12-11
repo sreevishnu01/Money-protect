@@ -32,6 +32,7 @@ const PaymentSelect = ({ paymentOptions = [], selectedValue, onChange = () => { 
                             {paymentOption.type === "master" && paymentOption.isValid && (
                                 <TextInput
                                     placeholder="CVV"
+                                    type="password"
                                     widthFr={null}
                                     style={{ width: "100px", backgroundColor: "white" }}
                                 />

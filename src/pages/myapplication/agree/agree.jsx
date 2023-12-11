@@ -1,4 +1,3 @@
-import "./agree.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import FormScafold from "../../../components/form_scafold/form_scafold";
@@ -82,6 +81,7 @@ const paymentOptions = [
 export default function Agreement() {
     const [isLoading, setIsLoading] = useState(false);
     const [selectedPayment, setSelectedPayment] = useState('1');
+    const [showAddCardForm, setShowAddCardForm] = useState(false);
 
     const navigate = useNavigate();
 
@@ -134,14 +134,24 @@ export default function Agreement() {
                             </div>
                         </FormSection>
                         <br />
-                        <FormSection title="Payment Method">
-                            <PaymentSelect
-                                paymentOptions={paymentOptions}
-                                selectedValue={selectedPayment}
-                                onChange={setSelectedPayment}
-                            />
-                        </FormSection>
-                        <br />
+                        {!showAddCardForm ? (
+                            <FormSection title="Payment Method" headerButton={{ title: '+ Add new Card', onClick: () => setShowAddCardForm(true) }}>
+                                <PaymentSelect
+                                    paymentOptions={paymentOptions}
+                                    selectedValue={selectedPayment}
+                                    onChange={setSelectedPayment}
+                                />
+                            </FormSection>
+                        ) : (
+                            <FormSection title="Payment Method" headerButton={{ title: 'X Cancel', onClick: () => setShowAddCardForm(false) }}>
+                                <TextInput label="Card Holder’s Name" widthFr={0.51} placeholder="Enter name on the card" />
+                                <TextInput label="Card Number" widthFr={0.51} placeholder="Enter 16 Digit Card Number" />
+                                <div style={{ width: '50%', display: 'flex', justifyContent: 'space-between' }}>
+                                    <TextInput label="Expiry Date" widthFr={0.5} placeholder="MM/YY" />
+                                    <TextInput label="CVV" widthFr={0.5} placeholder="Security Code" type="password" />
+                                </div>
+                            </FormSection>
+                        )}
                     </div>
                     <div style={{ minWidth: "30%" }}>
                         <FormSection title="Payment Summary">

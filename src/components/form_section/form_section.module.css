@@ -12,6 +12,12 @@
     margin-bottom: 16px;
 }
 
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .container hr {
     color: black;
     opacity: 0.1;
