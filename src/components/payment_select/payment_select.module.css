@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+}
+
+.paymentItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F9FC;
+    margin: 12px;
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid #151A261A;
+    padding-right: 18px;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.subTitle {
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.checkContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
