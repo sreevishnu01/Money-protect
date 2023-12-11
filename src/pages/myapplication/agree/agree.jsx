@@ -1,9 +1,15 @@
+import './agree.css';
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import FormScafold from "../../../components/form_scafold/form_scafold";
 import FormSection from "../../../components/form_section/form_section";
 import classes from "./agree.module.css";
 import DocumentViewer from "../../../components/document_veiwer/document_veiwer";
+import wallet from '../../images/wallet.png';
+import card from '../../images/card-icons.png';
+import Status from '../../images/Status icon.png'
+import applepay from '../../images/ApplePay.png'
+import check from '../../images/checks.png'
 
 const summeryData = [
     {
@@ -70,9 +76,72 @@ export default function Agreement() {
                             <DocumentViewer />
                         </FormSection>
                         <br />
-                        <FormSection title="Payment Method"></FormSection>
+                        <FormSection title="Payment Method">
+                        <div class="payment_cont">
+<div class="payment_sect">
+
+    <div class="wallet">
+
+        <input type="radio" name="pay_radio"/>
+
+        <div><img src={wallet} alt=""/></div>
+
+        <p>wallet</p>
+
+    </div>
+
+    <p>12,076.63 AED</p>
+
+</div>
+
+<div class="payment_sect">
+
+    <div class="wallet">
+
+        <input type="radio" name="pay_radio"/>
+
+        <div><img src={card} alt=""/></div>
+
+        <p>xxxx-4455</p>-
+
+    </div>
+
+    <input type="text" placeholder="CVV"/>
+
+</div>
+
+<div class="payment_sect">
+
+    <div class="wallet">
+
+        <input type="radio" name="pay_radio"/>
+
+        <div><img src={card} alt=""/></div>
+
+        <p>xxxx-5672</p>
+
+    </div>
+
+    <span><img src={Status} alt=""/></span>
+
+</div>
+
+<div class="payment_sect">
+
+    <div class="wallet">
+
+        <input type="radio" name="pay_radio"/>
+
+        <div><img src={applepay} alt=""/></div>
+
+        <p>Apple Pay</p>
+
+    </div>
+</div>
+</div>
+                        </FormSection>
                         <br />
-                        <FormSection title="Payment Method"></FormSection>
+                 
                     </div>
                     <div style={{ minWidth: "30%" }}>
                         <FormSection title="Payment Summary">
