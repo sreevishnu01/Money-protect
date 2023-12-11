@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { Checkbox, IconButton, Modal } from "@mui/material";
 import FormScafold from "../../../components/form_scafold/form_scafold";
 import FormSection from "../../../components/form_section/form_section";
 import classes from "./agree.module.css";
@@ -8,7 +9,6 @@ import TextInput from "../../../components/text_input/text_input";
 import wallet from "../../images/wallet.png";
 import card from "../../images/card-icons.png";
 import applepay from "../../images/ApplePay.png";
-import { Checkbox } from "@mui/material";
 import PaymentSelect from "../../../components/payment_select/payment_select";
 
 const summeryData = [
@@ -82,6 +82,7 @@ export default function Agreement() {
     const [isLoading, setIsLoading] = useState(false);
     const [selectedPayment, setSelectedPayment] = useState('1');
     const [showAddCardForm, setShowAddCardForm] = useState(false);
+    const [showSuccessModal, setShowSuccessModal] = useState(false);
 
     const navigate = useNavigate();
 
@@ -89,7 +90,7 @@ export default function Agreement() {
         setIsLoading(true);
         setTimeout(() => {
             setIsLoading(false);
-            navigate("/successfull");
+            setShowSuccessModal(true)
         }, 3000);
     };
 
@@ -108,6 +109,29 @@ export default function Agreement() {
 
     return (
         <div className={classes.Agree}>
+            <Modal open={showSuccessModal} >
+                <div className={classes.modalContainer}>
+                    <div style={{ textAlign: 'end', width: '100%' }}>
+                        <IconButton onClick={() => setShowSuccessModal(false)}>
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23 13L13 23M13 13L23 23" stroke="#667085" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </IconButton>
+                    </div>
+                    <svg width="93" height="92" viewBox="0 0 93 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.3">
+                            <rect x="11.5" y="11" width="70" height="70" rx="35" stroke="#DBA953" stroke-width="2" />
+                        </g>
+                        <g opacity="0.1">
+                            <rect x="1.5" y="1" width="90" height="90" rx="45" stroke="#DBA953" stroke-width="2" />
+                        </g>
+                        <path d="M35.9998 46L42.9998 53L56.9998 39M69.8332 46C69.8332 58.8866 59.3865 69.3333 46.4998 69.3333C33.6132 69.3333 23.1665 58.8866 23.1665 46C23.1665 33.1134 33.6132 22.6667 46.4998 22.6667C59.3865 22.6667 69.8332 33.1134 69.8332 46Z" stroke="#DBA953" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <h3>Successfully Submitted</h3>
+                    <p>Your application is successfully submitted, you can track your application status from your dashboard.</p>
+                </div>
+            </Modal>
             <FormScafold step={4} onSubmit={hadnleSubmit} loading={isLoading}>
                 <div style={{ display: "flex", gap: 24 }}>
                     <div style={{ flex: 1 }}>
