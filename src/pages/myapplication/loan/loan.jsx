@@ -59,7 +59,7 @@ export default function Loan() {
                     </div>
                     <div style={{ width: '48%' }}>
                         <p className='label'>Document 2</p>
-                        <FileInput id="doc2" widthFr={0.5} />
+                        <FileInput id="doc2" />
                     </div>
                 </FormSection>
             </FormScafold>
