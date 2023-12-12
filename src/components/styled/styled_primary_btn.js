@@ -11,11 +11,11 @@ const getBtnStyle = (variant) => {
         case "text":
             return {
                 backgroundColor:"transparent",
-                color: "#D3AB61",
+                color: "#DBA953",
             }
         default:
             return {
-                backgroundColor: "#D3AB61",
+                backgroundColor: "#DBA953",
                 color: "white",
             }
     }
