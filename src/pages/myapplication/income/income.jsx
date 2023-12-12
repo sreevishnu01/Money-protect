@@ -12,6 +12,7 @@ import RadioInput from "../../../components/radio_input/radio_input";
 const fieldWidthFr = 0.33;
 
 export default function Income() {
+    const [formData, setFormData] = useState({ clientType: 1 })
     const [isLoading, setIsLoading] = useState(false);
 
     const navigate = useNavigate();
@@ -23,6 +24,13 @@ export default function Income() {
             navigate("/loan");
         }, 3000);
     };
+
+    const handleFieldChange = (id, value) => {
+        setFormData(
+            _formData => ({ ..._formData, [id]: value })
+        )
+    }
+
 
     return (
         <div className="Income">
@@ -99,7 +107,8 @@ export default function Income() {
                 <FormSection title="Beneficiary Details">
                     <RadioInput
                         id="clientType"
-                        value={2}
+                        value={formData['clientType']}
+                        onChange={handleFieldChange}
                         options={[
                             {
                                 value: 1,
@@ -113,18 +122,22 @@ export default function Income() {
                             },
                         ]}
                     />
-                    <TextInput
-                        id="workPn"
-                        label="Work Phone Number"
-                        widthFr={fieldWidthFr}
-                        placeholder="(123) 456 - 7890"
-                    />
-                    <TextInput
-                        id="workEmail"
-                        label="Work Email Address"
-                        widthFr={fieldWidthFr}
-                        placeholder="abc@example.com"
-                    />
+                    {formData.clientType === 2 && (
+                        <>
+                            <TextInput
+                                id="workPn"
+                                label="Work Phone Number"
+                                widthFr={fieldWidthFr}
+                                placeholder="(123) 456 - 7890"
+                            />
+                            <TextInput
+                                id="workEmail"
+                                label="Work Email Address"
+                                widthFr={fieldWidthFr}
+                                placeholder="abc@example.com"
+                            />
+                        </>
+                    )}
                 </FormSection>
             </FormScafold>
         </div>

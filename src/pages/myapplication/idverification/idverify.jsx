@@ -32,6 +32,7 @@ export default function Idverification() {
                 resStatus: 1,
                 emIdNo: '1232132312321321',
                 nationality: 'in',
+                dob: '1990-01-01',
             })
             setIsLoading(false)
         }, 2000)
