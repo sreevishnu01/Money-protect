@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import classes from './file_input.module.css'
 
-const FileInput = ({ id = 'xyz' }) => {
+const FileInput = ({ id = 'xyz', onChange }) => {
     const [selectedFile, setSelectedFile] = useState()
     const [preview, setPreview] = useState()
 
@@ -10,7 +10,7 @@ const FileInput = ({ id = 'xyz' }) => {
             setPreview(undefined)
             return
         }
-
+        onChange(id, selectedFile)
         const objectUrl = URL.createObjectURL(selectedFile)
         setPreview(objectUrl)
 
