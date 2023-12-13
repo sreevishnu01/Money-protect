@@ -1,5 +1,6 @@
 #Header{
     background-color: #151a26;
+    background: linear-gradient(270deg, #0b1c47 0%, #151a26 100%);
     padding: 20px 0px;
     z-index: 10;
     position: fixed;

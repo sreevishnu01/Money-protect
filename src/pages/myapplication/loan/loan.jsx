@@ -53,14 +53,8 @@ export default function Loan() {
                 </FormSection>
                 <br />
                 <FormSection title="Upload Documents">
-                    <div style={{ width: '48%' }}>
-                        <p className='label'>Document 1</p>
-                        <FileInput id="doc1" />
-                    </div>
-                    <div style={{ width: '48%' }}>
-                        <p className='label'>Document 2</p>
-                        <FileInput id="doc2" />
-                    </div>
+                    <FileInput id="doc1" widthFr={0.48} label="Document 1" />
+                    <FileInput id="doc2" widthFr={0.48} label="Document 1" />
                 </FormSection>
             </FormScafold>
         </div>

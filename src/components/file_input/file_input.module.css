@@ -22,3 +22,12 @@
 .container span {
     color: #C8983F;
 }
+
+.label {
+    display: inline-block;
+    color: #151a26;
+    font-weight: 500;
+    font-size: 14px;
+    opacity: 0.6;
+    margin-bottom: 8px;
+  }
