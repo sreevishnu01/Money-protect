@@ -32,9 +32,22 @@
     gap: 20px;
     color: #fff;
 }
+
 .header_menu ul li a{
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 72px;
 }
+
+.header_menu ul li a.active {
+    color: #000;
+    background-color: #DBA953;
+}
+
 .header_btn{
     width: 20%;
     display: flex;

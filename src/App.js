@@ -14,6 +14,7 @@ import Loan from "./pages/myapplication/loan/loan";
 import Agreement from "./pages/myapplication/agree/agree";
 import Close from "./pages/profile/close";
 import Success from "./pages/myapplication/success/success";
+import Dashboard from "./pages/dashboard/dashboard";
 
 function App() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -31,6 +32,7 @@ function App() {
         <Routes>
           <Route path={"/"} element={<Home />} />
           <Route path={"/Money-protect"} element={<Home />} />
+          <Route path={"/dashboard"} element={<Dashboard />} />
           <Route path={"/otp"} element={<Otp />} />
           <Route path={"/login"} element={<Login />} />
           <Route path={"/idverification"} element={<Idverification />} />
