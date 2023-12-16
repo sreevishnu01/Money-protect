@@ -19,7 +19,7 @@
     flex-wrap: wrap;
     position: relative;
     box-shadow: 0 0 10px #a7a7a7;
-    background-image: url(../../images/login.png);
+    background-image: url(../../../assets/images/login.png);
     background-size: cover;
     background-position: center;
 

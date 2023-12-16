@@ -193,7 +193,7 @@ body{
     gap: 10px;
 }
 .emi li{
-    list-style-image: url(../images/check-list.png);
+    list-style-image: url(../../assets/images/check-list.png);
 }
 .emi_btn{
     margin: 20px 0;

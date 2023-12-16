@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import Header from '../header/header';
-import banner from '../images/home-banner.png'
+import banner from '../../assets/images/home-banner.png'
 import './home.css';
 import { Button } from '@mui/material';
 import { CChartLine } from '@coreui/react-chartjs';
@@ -9,82 +9,82 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 
-import line from "../images/line-chart-up-01.png";
-import bar from '../images/bar-chart-square-down.png';
-import trade from '../images/trend-up-01.png';
+import line from "../../assets/images/line-chart-up-01.png";
+import bar from '../../assets/images/bar-chart-square-down.png';
+import trade from '../../assets/images/trend-up-01.png';
 
-import emi1 from '../images/emi1.png';
-import emi2 from '../images/emi2.png';
-import emi3 from '../images/emi3.png';
+import emi1 from '../../assets/images/emi1.png';
+import emi2 from '../../assets/images/emi2.png';
+import emi3 from '../../assets/images/emi3.png';
 import Eligibility from '../eligiblity/eligibility';
 
 import { Link } from 'react-router-dom';
 
 
 export default function Home() {
-   
+
     const data = {
         labels: ["Jan ", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         datasets: [
-          {
-            label: 'Downtown',
-            data: [10,15,11,16,12,17,13,18,14,19,15,13,10],
-            backgroundColor: '#fd1111',
-            borderColor: '#fd1111',
-            pointRadius: 0, 
-          },
-          {
-            label: 'Business Bay ',
-            data: [11,16,12,17,14,18,15,20,16,21,19,14],
-            backgroundColor: '#022cb7',
-            borderColor: '#022cb7',
-            // cubicInterpolationMode: 'monotone',
-            pointRadius: 0, 
-          },
-          {
-            label: 'Al Jadaf',
-            data: [12,17,13,18,16,19,16,21,17,22,20,15],
-            backgroundColor: '#fee50a',
-            borderColor: '#fee50a',
-            // cubicInterpolationMode: 'monotone',
-            pointRadius: 0, 
-          },
-          {
-            label: 'Marina',
-            data: [13,18,14,19,17,20,17,22,18,23,21,16],
-            backgroundColor: '#6de50e',
-            borderColor: '#6de50e',
-            // cubicInterpolationMode: 'monotone',
-            pointRadius: 0, 
-          },
-          {
-            label: 'Others',
-            data: [14,19,15,20,18,21,18,23,19,24,22,17],
-            backgroundColor: '#000',
-            borderColor: '#000',
-            // cubicInterpolationMode: 'monotone',
-            pointRadius: 0, 
-          },
+            {
+                label: 'Downtown',
+                data: [10, 15, 11, 16, 12, 17, 13, 18, 14, 19, 15, 13, 10],
+                backgroundColor: '#fd1111',
+                borderColor: '#fd1111',
+                pointRadius: 0,
+            },
+            {
+                label: 'Business Bay ',
+                data: [11, 16, 12, 17, 14, 18, 15, 20, 16, 21, 19, 14],
+                backgroundColor: '#022cb7',
+                borderColor: '#022cb7',
+                // cubicInterpolationMode: 'monotone',
+                pointRadius: 0,
+            },
+            {
+                label: 'Al Jadaf',
+                data: [12, 17, 13, 18, 16, 19, 16, 21, 17, 22, 20, 15],
+                backgroundColor: '#fee50a',
+                borderColor: '#fee50a',
+                // cubicInterpolationMode: 'monotone',
+                pointRadius: 0,
+            },
+            {
+                label: 'Marina',
+                data: [13, 18, 14, 19, 17, 20, 17, 22, 18, 23, 21, 16],
+                backgroundColor: '#6de50e',
+                borderColor: '#6de50e',
+                // cubicInterpolationMode: 'monotone',
+                pointRadius: 0,
+            },
+            {
+                label: 'Others',
+                data: [14, 19, 15, 20, 18, 21, 18, 23, 19, 24, 22, 17],
+                backgroundColor: '#000',
+                borderColor: '#000',
+                // cubicInterpolationMode: 'monotone',
+                pointRadius: 0,
+            },
         ],
-      };
-    
-      const options = {
+    };
+
+    const options = {
         scales: {
-          x: {
-            display: true,
-            align: 'end',
-          },
-          y: {
-            display: false,
-            beginAtZero: true,
-            align: 'end',
-          },
+            x: {
+                display: true,
+                align: 'end',
+            },
+            y: {
+                display: false,
+                beginAtZero: true,
+                align: 'end',
+            },
         },
-      };
+    };
 
 
 
-    return(
+    return (
         <div id="Home">
             {/* <Header/> */}
             <div className="Home">
@@ -105,7 +105,7 @@ export default function Home() {
                     </div>
                     <div className="financial">
                         <Box sx={{ width: '100%' }}>
-                            <Grid container rowSpacing={{xs: 1, sm: 2, md: 3, lg:6}} columnSpacing={{ xs: 1, sm: 2, md: 3, lg:6}}>
+                            <Grid container rowSpacing={{ xs: 1, sm: 2, md: 3, lg: 6 }} columnSpacing={{ xs: 1, sm: 2, md: 3, lg: 6 }}>
                                 <Grid className='financial_conts' item lg={4} md={6} sm={6} >
                                     <div>
                                         <div className="finance_img">
@@ -130,15 +130,15 @@ export default function Home() {
                                             <h2 className="finance_title">Financial Freedom</h2>
                                             <p>Our freedom solutions will help you get rid of your debt.</p>
                                         </div>
-                                        <div className='finance_btn'> 
+                                        <div className='finance_btn'>
                                             <Button size="small">Learn More</Button>
                                         </div>
                                     </div>
-                                    
+
                                 </Grid>
 
                                 <Grid className='financial_conts' item lg={4} md={6} sm={6}>
-                                <div>
+                                    <div>
                                         <div className="finance_img">
                                             <img src={bar} alt="" />
                                         </div>
@@ -149,21 +149,21 @@ export default function Home() {
                                         <div className='finance_btn'>
                                             <Button size='medium'>Learn More</Button>
                                         </div>
-                                </div>
+                                    </div>
                                 </Grid>
 
                             </Grid>
                         </Box>
                     </div>
                     <div className="eligibile">
-                        <Eligibility/>
+                        <Eligibility />
                     </div>
                     <div className="enroll">
                         <div className="enroll_title">
                             <h1>Enroll in our innovative products with just four simple steps.</h1>
                         </div>
-                        <Box sx={{width:"100%"}}>
-                            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3, lg:6}}>
+                        <Box sx={{ width: "100%" }}>
+                            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3, lg: 6 }}>
                                 <Grid className='enroll_conts' item lg={3} md={6} sm={6}>
                                     <div className="enroll_title_number">
                                         <h4>01</h4>

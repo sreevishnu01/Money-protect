@@ -1,6 +1,6 @@
 import { Radio } from "@mui/material";
 import classes from "./payment_select.module.css";
-import warningIcon from "../../pages/images/warning.png";
+import warningIcon from "../../assets/images/warning.png";
 import TextInput from "../text_input/text_input";
 
 const PaymentSelect = ({ paymentOptions = [], selectedValue, onChange = () => { } }) => {

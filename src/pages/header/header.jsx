@@ -1,20 +1,20 @@
 
 import './header.css';
-import logo from '../images/header-logo.png';
+import logo from '../../assets/images/header-logo.png';
 import { Button } from '@mui/material';
 import { useState } from 'react';
-import {BrowserRouter as Router,Routes,Route,Link} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-export default function(){
+export default function () {
 
     const [isToggled, setIsToggled] = useState(false);
 
     const handleToggle = () => {
-      setIsToggled(!isToggled);
+        setIsToggled(!isToggled);
     };
 
 
-    return(
+    return (
         <div id="Header">
             <div className="Header">
                 <div className="header_logo">
@@ -30,7 +30,7 @@ export default function(){
                 </nav>
                 <div className="header_btn">
                     <Button className='login'><div><Link to={"/login"}>Login</Link></div></Button>
-                    
+
                     <Button className='demo'>Request Demo</Button>
                 </div>
                 <div className="header_menu_btn" onClick={handleToggle}>

@@ -1,17 +1,17 @@
 
 import './profile.css';
-import edit from '../images/edit.png';
-import profile_image from '../images/profile_image.png';
-import edit2 from '../images/edit2.png';
-import gps from '../images/gps.png';
-import cake from '../images/cake.png';
+import edit from '../../assets/images/edit.png';
+import profile_image from '../../assets/images/profile_image.png';
+import edit2 from '../../assets/images/edit2.png';
+import gps from '../../assets/images/gps.png';
+import cake from '../../assets/images/cake.png';
 import { Button } from '@mui/material';
-import scaner from '../images/scaner.png';
-import download from '../images/download.png';
-import plus from '../images/plus.png';
-import mypay1 from '../images/mypay1.png';
-import mypay2 from '../images/mypay2.png';
-import mypay3 from '../images/mypay3.png';
+import scaner from '../../assets/images/scaner.png';
+import download from '../../assets/images/download.png';
+import plus from '../../assets/images/plus.png';
+import mypay1 from '../../assets/images/mypay1.png';
+import mypay2 from '../../assets/images/mypay2.png';
+import mypay3 from '../../assets/images/mypay3.png';
 import BarChart from './bar';
 import PieChartWithCenterLabel from './pie';
 import { Link } from 'react-router-dom';
@@ -24,25 +24,25 @@ import { Link } from 'react-router-dom';
 
 
 
-export default function ProfileDetail({ data }){
-    
+export default function ProfileDetail({ data }) {
 
 
-    return(
+
+    return (
 
         <div id="Profile">
             <div className="Profile_page">
                 <div className="profile_page">
                     <div className="profile_dash">
-                    <ul>
-                        <li><i class="fa fa-circle" aria-hidden="true"></i><Link to={"/profiledetail"}> <h3>Profile Details</h3> </Link></li>
-                        
-                        <li><i class="fa fa-circle" aria-hidden="true"></i> <Link to={"/idverification"}><h3>My Applications</h3></Link></li>
-                        
-                        <li><i class="fa fa-circle" aria-hidden="true"></i> <Link><h3>Inbox</h3></Link></li>
-                        
-                        <li><i class="fa fa-circle" aria-hidden="true"></i><Link> <h3>Settings</h3></Link></li>
-                    </ul>
+                        <ul>
+                            <li><i class="fa fa-circle" aria-hidden="true"></i><Link to={"/profiledetail"}> <h3>Profile Details</h3> </Link></li>
+
+                            <li><i class="fa fa-circle" aria-hidden="true"></i> <Link to={"/idverification"}><h3>My Applications</h3></Link></li>
+
+                            <li><i class="fa fa-circle" aria-hidden="true"></i> <Link><h3>Inbox</h3></Link></li>
+
+                            <li><i class="fa fa-circle" aria-hidden="true"></i><Link> <h3>Settings</h3></Link></li>
+                        </ul>
                     </div>
                     <div className="profile_cont">
                         <div className="personal_info">
@@ -56,23 +56,23 @@ export default function ProfileDetail({ data }){
                                 <div className="personal_inputs">
                                     <div>
                                         <label htmlFor="Profile_Name">Name: </label>
-                                        <input type="text" placeholder='Fatima Badr'/>
+                                        <input type="text" placeholder='Fatima Badr' />
                                     </div>
                                     <div>
                                         <label htmlFor="DOB">Date Of Birth</label>
-                                        <input type="date" placeholder='15/03/1997'/>
+                                        <input type="date" placeholder='15/03/1997' />
                                     </div>
                                     <div>
                                         <label htmlFor="Phone_Number">Phone Number</label>
                                         <input type="number" />
                                     </div>
-                                   <div>
+                                    <div>
                                         <label htmlFor="Profile_Address">Address</label>
-                                        <input type="text" placeholder='Gothenburg'/>
-                                   </div>
+                                        <input type="text" placeholder='Gothenburg' />
+                                    </div>
                                     <div>
                                         <label htmlFor="Profile_Email">Email</label>
-                                        <input type="email" placeholder='fatimab@gmail.com'/>
+                                        <input type="email" placeholder='fatimab@gmail.com' />
                                     </div>
                                 </div>
                             </div>
@@ -110,9 +110,9 @@ export default function ProfileDetail({ data }){
                                         </div>
                                     </div>
                                     <div className="">
-                                    <BarChart/>
+                                        <BarChart />
                                     </div>
-                                </div>  
+                                </div>
                             </div>
                             <div>
                                 <div className="personal_pie_chart">
@@ -121,13 +121,13 @@ export default function ProfileDetail({ data }){
                                         <p>This Week <i class="fa fa-angle-down" aria-hidden="true"></i></p>
                                     </div>
                                     <div className='chart'>
-                                        <PieChartWithCenterLabel/>
+                                        <PieChartWithCenterLabel />
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="pending">
-                           <div className="pending_inner">
+                            <div className="pending_inner">
                                 <div className='pending_cont'>
                                     <div className='pending_circle'></div>
                                     <div className='pending_content'>
@@ -156,7 +156,7 @@ export default function ProfileDetail({ data }){
                                         <p>Total Due</p>
                                     </div>
                                 </div>
-                           </div>
+                            </div>
                         </div>
                         <div className="mypayment">
                             <div className="mypayment_inner">
@@ -212,10 +212,10 @@ export default function ProfileDetail({ data }){
                                 <div className="mypayment_search">
                                     <div>
                                         <i class="fa fa-search" aria-hidden="true"></i>
-                                        <input type="text" placeholder='Search by Payment'/>
+                                        <input type="text" placeholder='Search by Payment' />
                                     </div>
                                     <div>
-                                        <i class="fa fa-filter" aria-hidden="true"></i> 
+                                        <i class="fa fa-filter" aria-hidden="true"></i>
                                         Filter
                                     </div>
                                 </div>

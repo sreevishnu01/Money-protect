@@ -6,9 +6,9 @@ import FormSection from "../../../components/form_section/form_section";
 import classes from "./agree.module.css";
 import DocumentViewer from "../../../components/document_veiwer/document_veiwer";
 import TextInput from "../../../components/text_input/text_input";
-import wallet from "../../images/wallet.png";
-import card from "../../images/card-icons.png";
-import applepay from "../../images/ApplePay.png";
+import wallet from "../../../assets/images/wallet.png";
+import card from "../../../assets/images/card-icons.png";
+import applepay from "../../../assets/images/ApplePay.png";
 import PaymentSelect from "../../../components/payment_select/payment_select";
 
 const summeryData = [
