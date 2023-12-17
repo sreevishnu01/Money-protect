@@ -1,7 +1,7 @@
 .container {
     margin-top: 60px;
     background-color: var(--bg-grey);
-    height: 100%;
+    min-height: 100%;
 }
 
 .header {
@@ -35,4 +35,39 @@
 
 .amountInfoCards>div {
     width: 24%;
+}
+
+.detailSection {
+    display: flex;
+    padding: 24px 64px;
+    gap: 18px;
+}
+
+.detailSection>div {
+    flex:1;
+}
+
+.activeLoanSection>h3 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 64px;
+}
+
+.loanAccCards {
+    overflow: auto;
+    padding-bottom: 24px;
+    padding-left: 64px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.loanAccCards>div {
+    display: inline-block;
+    height: 180px;
+    width: 400px;
+    border-radius: 16px;
+    margin-right: 30px;
+    background-color: white;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
