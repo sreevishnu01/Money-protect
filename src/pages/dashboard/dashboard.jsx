@@ -7,9 +7,10 @@ import {
     PlusBoxIcon,
 } from "../../assets/SVG";
 import FormSection from "../../components/form_section/form_section";
-import AmountInfoCard from "../../components/info_card/amount_info_card";
+import AmountInfoCard from "../../components/info_card/amount/amount_info_card";
 import StyledPrimaryButton from "../../components/styled/styled_primary_btn";
 import classes from "./dashboard.module.css";
+import LoanInfoCard from "../../components/info_card/loan/loan_info_card";
 
 const upComingPayments = [
     {
@@ -148,26 +149,26 @@ function Dashboard() {
             <div className={classes.activeLoanSection}>
                 <h3>Active Loan Accounts</h3>
                 <div className={classes.loanAccCards}>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
+                    <div><LoanInfoCard /></div>
                 </div>
             </div>
         </div>

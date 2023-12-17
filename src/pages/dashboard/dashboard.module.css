@@ -63,11 +63,8 @@
 
 .loanAccCards>div {
     display: inline-block;
-    height: 180px;
     width: 400px;
-    border-radius: 16px;
     margin-right: 30px;
-    background-color: white;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
