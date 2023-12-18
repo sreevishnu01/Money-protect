@@ -2,7 +2,7 @@ import Header from "./pages/header/header";
 import Home from "./pages/home/home";
 import Landding from "./pages/landing/landding";
 import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Otp from "./pages/login_signup/otp/otp";
 import Login from "./pages/login_signup/login/login";
 import Idverification from "./pages/myapplication/idverification/idverify";
@@ -27,11 +27,11 @@ function App() {
   return (
     <div className="App">
       {!isImageLoaded && <p>Loading...</p>}
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <Routes>
           <Route path={"/"} element={<Login />} />
-          <Route path={"/Money-protect"} element={<Home />} />
+          <Route path={"/Money-protect"} element={<Login />} />
           <Route path={"/dashboard"} element={<Dashboard />} />
           <Route path={"/otp"} element={<Otp />} />
           <Route path={"/login"} element={<Login />} />
@@ -45,7 +45,7 @@ function App() {
           <Route path={"/close"} element={<Close />} />
           <Route path={"/successfull"} element={<Success />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
