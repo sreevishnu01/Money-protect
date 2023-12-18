@@ -30,7 +30,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path={"/"} element={<Home />} />
+          <Route path={"/"} element={<Login />} />
           <Route path={"/Money-protect"} element={<Home />} />
           <Route path={"/dashboard"} element={<Dashboard />} />
           <Route path={"/otp"} element={<Otp />} />
