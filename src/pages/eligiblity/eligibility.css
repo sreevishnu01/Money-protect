@@ -76,10 +76,7 @@ span.MuiSlider-thumb.MuiSlider-thumbSizeMedium.MuiSlider-thumbColorSecondary.Mui
 .css-frv3qg-MuiSlider-thumb:before{
     box-shadow:0px 0 0 10px #d3ab61 !important;
 }
-.active{
-  background-color: #10141e;
-  border-bottom: 3px solid #dba953 !important;
-}
+
 .eligibility_calculator_cont,.eligibility_mortgage_cont{
     display: flex;
     padding: 20px 20px 0 20px ;

@@ -21,6 +21,7 @@ import StyledPrimaryButton from "../../components/styled/styled_primary_btn";
 import classes from "./dashboard.module.css";
 import LoanInfoCard from "../../components/info_card/loan/loan_info_card";
 import { Link } from "react-router-dom";
+import NewApplicationLink from "../../components/new_application_link/new_application_link";
 
 const upComingPayments = [
   {
@@ -64,12 +65,7 @@ function Dashboard() {
           <h2>Dashboard</h2>
         </div>
         <div>
-          <Link to={"/idverification"}>
-            <StyledPrimaryButton>
-              {" "}
-              <PlusBoxIcon style={{ marginRight: "10px" }} /> New Application
-            </StyledPrimaryButton>
-          </Link>
+          <NewApplicationLink />
         </div>
       </div>
       <div className={classes.amountInfoCards}>

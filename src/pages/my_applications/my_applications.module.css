@@ -1,0 +1,61 @@
+.container {
+    margin-top: 60px;
+    background-color: var(--bg-grey);
+    min-height: 100%;
+}
+
+.header {
+    background: var(--nav-bg);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 64px;
+}
+
+.header h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.statusFilter {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    box-shadow: var(--bg-grey) 1px 1px 150px;
+}
+
+.statusFilter>div {
+    padding: 16px 24px;
+}
+
+.statusFilter>div:hover {
+    background-color: var(--bg-grey);
+    cursor: pointer;
+}
+
+.statusFilter>div.active {
+    background-color: var(--bg-grey);
+    color: var(--primary-color);
+    cursor: auto;
+}
+
+.applications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    padding: 24px 64px;
+}
+
+.applications>div {
+    width: 32%;
+    margin-bottom: 16px;
+}

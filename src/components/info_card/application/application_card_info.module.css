@@ -1,0 +1,55 @@
+.container {
+    background-color: white;
+    width: 100%;
+    border-radius: 16px;
+    color: var(--primary-dark-color);
+}
+
+.titleContainer {
+    padding: 20px;
+}
+
+.titleContainer h4 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 4px;
+}
+
+.titleContainer p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.detailContainer {
+    background-color: var(--bg-light);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.detailContainer>div {
+    flex: 1;
+}
+
+.detailContainer p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.detailContainer p:first-child {
+    margin-bottom: 4px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer a {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 600;
+}
