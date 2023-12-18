@@ -1,4 +1,5 @@
-import { Badge, Chip, Table, TableBody, TableCell, TableHead, TableRow } from "@mui/material";
+import { Chip, Stack, Table, TableBody, TableCell, TableHead, TableRow } from "@mui/material";
+import { BarChart } from '@mui/x-charts'
 import {
     CheckSuccessIcon,
     DollarWarningIcon,
@@ -92,8 +93,33 @@ function Dashboard() {
             </div>
 
             <div className={classes.detailSection}>
-                <div>
-                    <FormSection title="Money Earned" />
+                <div style={{ flex: 1 }} >
+                    <FormSection title="Money Earned">
+                        <Stack sx={{ width: '100%', height: 270 }}>
+                            <BarChart
+                                xAxis={[
+                                    {
+                                        id: 'barCategories',
+                                        data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                                        scaleType: 'band',
+                                    },
+                                ]}
+                                series={[
+                                    {
+                                        data: [24, 19, 11, 32, 40, 25, 24, 19, 32, 11, 19, 11],
+                                    },
+                                ]}
+                                // width={}
+                                margin={{
+                                    top: 10,
+                                    bottom: 20,
+                                    left: 25,
+                                    right: 12,
+                                }}
+                                colors={['#CDD5EB']}
+                            />
+                        </Stack>
+                    </FormSection>
                 </div>
                 <div>
                     <FormSection
