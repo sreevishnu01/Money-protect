@@ -2,7 +2,7 @@ import "./header.css";
 import logo from "../../assets/images/header-logo.png";
 import { Button } from "@mui/material";
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { GridBoxIcon, PlusBoxIcon, PagesIcon } from "../../assets/SVG";
 
 export default function () {
@@ -21,19 +21,19 @@ export default function () {
         <nav className={`header_menu ${isToggled ? "active" : ""}`}>
           <ul>
             <li>
-              <Link to={"/dashboard"} className="active">
-                <GridBoxIcon fillColor="#000" /> Dashboard
-              </Link>
+              <NavLink to={"/dashboard"}>
+                <GridBoxIcon /> Dashboard
+              </NavLink>
             </li>
             <li>
-              <Link to={"/loan-details"}>
+              <NavLink to={"/loan-details"}>
                 <PlusBoxIcon /> Loan Details
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to={"/my-applications"}>
+              <NavLink to={"/my-applications"}>
                 <PagesIcon /> My Applications
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
