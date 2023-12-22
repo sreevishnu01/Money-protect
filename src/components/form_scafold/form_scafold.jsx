@@ -2,6 +2,7 @@ import classes from "./form_scafold.module.css";
 import { CircularProgress } from "@mui/material";
 import StyledPrimaryButton from "../styled/styled_primary_btn";
 import { useNavigate } from "react-router-dom";
+import loadingImg from "../../assets/images/loading_logo.gif";
 
 const TOTAL_STEPS = 4;
 
@@ -31,7 +32,7 @@ const FormScafold = ({
     <div className={classes.container}>
       {loading && (
         <div className={classes.loadingIndicator}>
-          <CircularProgress size={60} style={{ color: "#D3AB61" }} />
+          {<img src={loadingImg} />}
         </div>
       )}
       <div className={classes.headerContainer}>

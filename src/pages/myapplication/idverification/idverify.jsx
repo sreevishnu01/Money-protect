@@ -98,7 +98,7 @@ export default function Idverification() {
             />
             <SelectInput
               id="nationality"
-              label="Natinality *"
+              label="Nationality *"
               widthFr={0.5}
               options={[
                 { value: "in", label: "India" },
