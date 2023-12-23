@@ -10,6 +10,7 @@ import wallet from "../../../assets/images/wallet.png";
 import card from "../../../assets/images/card-icons.png";
 import applepay from "../../../assets/images/ApplePay.png";
 import PaymentSelect from "../../../components/payment_select/payment_select";
+import { applyForOptions } from "../loan/loan";
 
 const summeryData = [
   {
@@ -95,7 +96,9 @@ export default function Agreement() {
     const date = new Date();
     allData.push({
       appName: `${data?.idVerify?.firstName} ${data.idVerify.lastName}`,
-      productName: data?.income?.company,
+      productName: applyForOptions.find(
+        (app) => app.value === data?.loan?.applyFor
+      ).label,
       subDate: `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`,
       status: "In Review",
     });

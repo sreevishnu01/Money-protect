@@ -11,7 +11,7 @@ import { Add } from "@mui/icons-material";
 
 // Sleeping Period with Equity Release
 // Sleeping Period Without Equity Release
-const applyForOptions = [
+export const applyForOptions = [
   {
     value: 1,
     label: "Equity Release (No Loan)",
@@ -67,7 +67,7 @@ export default function Loan() {
               value={formData.duration}
               options={Array.from(Array(10)).map((_, index) => ({
                 value: index,
-                label: `${index} years`,
+                label: `${index + 1} years`,
               }))}
             />
           )}

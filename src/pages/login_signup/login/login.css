@@ -2,20 +2,24 @@
 .login_signup{
     /* margin: 180px 0  */
 }
+.Login_signup, .two_factor_page, .login_account {
+    height: 100%;
+}
+
 .login_account{
     font-family: 'Nunito Sans', sans-serif;
     display: flex;
-    padding: 0 50px;
     padding-bottom: 0;
     align-items: center;
     justify-content: center;
-    margin: 100px 0 0 0;
+    margin: 70px 0 0 0;
+    min-height: 100%;
 }
 .login_accounts{
     background-color: #fff;
     display: flex;
     width: 100%;
-    border-radius: 35px;
+    min-height: 100%;
     flex-wrap: wrap;
     position: relative;
     box-shadow: 0 0 10px #a7a7a7;
