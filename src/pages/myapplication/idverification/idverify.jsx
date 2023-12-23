@@ -1,7 +1,7 @@
 import "./idverify.css";
 
 import FormScafold from "../../../components/form_scafold/form_scafold";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import FormSection from "../../../components/form_section/form_section";
 import FileInput from "../../../components/file_input/file_input";
@@ -16,11 +16,19 @@ export default function Idverification() {
 
   const hadnleSubmit = () => {
     setIsLoading(true);
+    localStorage.setItem(
+      "CURRENT_APPLICATION",
+      JSON.stringify({ idVerify: formData })
+    );
     setTimeout(() => {
       setIsLoading(false);
       navigate("/income");
-    }, 3000);
+    }, 2000);
   };
+
+  useEffect(() => {
+    localStorage.setItem("CURRENT_APPLICATION", {});
+  }, []);
 
   const handleIdImageChange = (id, image) => {
     setIsLoading(true);

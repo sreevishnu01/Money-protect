@@ -2,7 +2,13 @@ import { Link } from "react-router-dom";
 import classes from "./application_card_info.module.css";
 import { Chip } from "@mui/material";
 
-const ApplicationCardInfo = ({ status }) => {
+const ApplicationCardInfo = ({
+  status,
+  title,
+  subTitle,
+  refNum = "55566689027",
+  subDate,
+}) => {
   return (
     <div className={classes.container}>
       <div className={classes.titleContainer}>
@@ -12,17 +18,17 @@ const ApplicationCardInfo = ({ status }) => {
           {...status}
           sx={{ marginBottom: "8px" }}
         />
-        <h4>Application Name</h4>
-        <p>Product name here</p>
+        <h4>{title}</h4>
+        <p>{subTitle}</p>
       </div>
       <div className={classes.detailContainer}>
         <div>
           <p>Reference Number: </p>
-          <p>55566689027</p>
+          <p>{refNum}</p>
         </div>
         <div>
           <p>Submission Date:</p>
-          <p>23/07/2023</p>
+          <p>{subDate}</p>
         </div>
       </div>
       <div className={classes.footer}>

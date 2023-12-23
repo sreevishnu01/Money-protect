@@ -35,10 +35,13 @@ export default function Loan() {
 
   const hadnleSubmit = () => {
     setIsLoading(true);
+    const data = JSON.parse(localStorage.getItem("CURRENT_APPLICATION"));
+    data.loan = formData;
+    localStorage.setItem("CURRENT_APPLICATION", JSON.stringify(data));
     setTimeout(() => {
       setIsLoading(false);
       navigate("/agreement");
-    }, 3000);
+    }, 2000);
   };
 
   const handleOnFieldChange = (id, value) => {

@@ -42,10 +42,13 @@ export default function Income() {
 
   const hadnleSubmit = () => {
     setIsLoading(true);
+    const data = JSON.parse(localStorage.getItem("CURRENT_APPLICATION"));
+    data.income = formData;
+    localStorage.setItem("CURRENT_APPLICATION", JSON.stringify(data));
     setTimeout(() => {
       setIsLoading(false);
       navigate("/loan");
-    }, 3000);
+    }, 2000);
   };
 
   const handleFieldChange = (id, value) => {
@@ -102,29 +105,40 @@ export default function Income() {
         </FormSection>
         <br />
         <FormSection title="General Information">
-          <TextInput id="company" label="Company" widthFr={fieldWidthFr} />
+          <TextInput
+            id="company"
+            label="Company"
+            widthFr={fieldWidthFr}
+            value={formData.company}
+            onChange={handleFieldChange}
+          />
           <TextInput id="jobTitle" label="Job Title" widthFr={fieldWidthFr} />
           <SelectInput
             id="industry"
             label="Industry"
             widthFr={fieldWidthFr}
-            onChange={() => {}}
             options={industries.map((industry) => ({
               value: industry,
               label: industry,
             }))}
+            value={formData.industry}
+            onChange={handleFieldChange}
           />
           <SelectInput
             id="empStatus"
-            label="Employement Status"
+            label="Employment Status"
             widthFr={fieldWidthFr}
             options={empStatuses.map((emp) => ({ value: emp, label: emp }))}
+            value={formData.empStatus}
+            onChange={handleFieldChange}
           />
           <TextInput
             id="joinDate"
             label="Joining Date"
             widthFr={fieldWidthFr}
             type="date"
+            value={formData.joinDate}
+            onChange={handleFieldChange}
           />
         </FormSection>
         <br />
@@ -137,11 +151,15 @@ export default function Income() {
               { value: "married", label: "Married" },
               { value: "single", label: "Single" },
             ]}
+            value={formData.maritalStatus}
+            onChange={handleFieldChange}
           />
           <TextInput
             id="spouseName"
             label="Spouse Name"
             widthFr={fieldWidthFr}
+            value={formData.spouseName}
+            onChange={handleFieldChange}
           />
           <SelectInput
             id="noOfDepend"
@@ -161,6 +179,8 @@ export default function Income() {
               { value: 9, label: "9" },
               { value: 10, label: "10" },
             ]}
+            value={formData.noOfDepend}
+            onChange={handleFieldChange}
           />
         </FormSection>
         <br />
@@ -169,11 +189,15 @@ export default function Income() {
             id="monthlyIncome"
             label="Monthly Income"
             widthFr={fieldWidthFr}
+            value={formData.monthlyIncome}
+            onChange={handleFieldChange}
           />
           <CurrencyInput
-            id="monthlyExpences"
-            label="Monthly Expences"
+            id="monthlyExpenses"
+            label="Monthly Expenses"
             widthFr={fieldWidthFr}
+            value={formData.monthlyExpenses}
+            onChange={handleFieldChange}
           />
         </FormSection>
       </FormScafold>
