@@ -81,6 +81,7 @@ export default function Loan() {
                 id={`doc${index + 1}`}
                 widthFr={0.48}
                 label={`Document ${index + 1}`}
+                onChange={() => {}}
               />
             ))}
           <div style={{ width: "100%" }}>
