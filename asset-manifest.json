@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Money-protect/static/css/main.429286f7.css",
-    "main.js": "/Money-protect/static/js/main.2f212efe.js",
+    "main.css": "/Money-protect/static/css/main.5d8c4012.css",
+    "main.js": "/Money-protect/static/js/main.199366f2.js",
     "static/media/login.png": "/Money-protect/static/media/login.00d7b137e95d67c78419.png",
     "static/media/home-banner.png": "/Money-protect/static/media/home-banner.83394d5c1a0cbf44c02e.png",
     "static/media/emi2.png": "/Money-protect/static/media/emi2.8b422182f5437b1a763c.png",
@@ -10,11 +10,11 @@
     "static/media/emi1.png": "/Money-protect/static/media/emi1.c0437e79fa27844e87de.png",
     "static/media/profile_image.png": "/Money-protect/static/media/profile_image.629c90d167b6d7fcaa91.png",
     "index.html": "/Money-protect/index.html",
-    "main.429286f7.css.map": "/Money-protect/static/css/main.429286f7.css.map",
-    "main.2f212efe.js.map": "/Money-protect/static/js/main.2f212efe.js.map"
+    "main.5d8c4012.css.map": "/Money-protect/static/css/main.5d8c4012.css.map",
+    "main.199366f2.js.map": "/Money-protect/static/js/main.199366f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.429286f7.css",
-    "static/js/main.2f212efe.js"
+    "static/css/main.5d8c4012.css",
+    "static/js/main.199366f2.js"
   ]
 }
