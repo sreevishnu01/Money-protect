@@ -33,10 +33,7 @@ const FileInput = ({ id = "xyz", label = "", widthFr = 1, onChange }) => {
         onClick={() => document.getElementById(id).click()}
       >
         {selectedFile ? (
-          <img
-            style={{ maxWidth: "800px", maxHeight: "400px" }}
-            src={preview}
-          />
+          <img style={{ maxWidth: "100%", maxHeight: "400px" }} src={preview} />
         ) : (
           <>
             <svg
