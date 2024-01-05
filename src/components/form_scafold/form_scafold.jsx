@@ -1,8 +1,9 @@
 import classes from "./form_scafold.module.css";
-import { CircularProgress } from "@mui/material";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import StyledPrimaryButton from "../styled/styled_primary_btn";
 import { useNavigate } from "react-router-dom";
 import loadingImg from "../../assets/images/loading_logo.gif";
+import "react-circular-progressbar/dist/styles.css";
 
 const TOTAL_STEPS = 4;
 
@@ -12,6 +13,7 @@ const FormScafold = ({
   children,
   onSubmit = () => {},
 }) => {
+  const progressPercentage = (step / (TOTAL_STEPS + 1)) * 100;
   const navgate = useNavigate();
   const doneIconSVG = (
     <svg
@@ -41,7 +43,7 @@ const FormScafold = ({
       <div className={classes.stepHeader}>
         <div
           className={classes.progress}
-          style={{ width: `${(step / (TOTAL_STEPS + 1)) * 100}%` }}
+          style={{ width: `${progressPercentage}%` }}
         />
         <div className={classes.steps}>
           <div className={classes.stepItem}>
@@ -162,6 +164,18 @@ const FormScafold = ({
               <h5>Agreement</h5>
             </div>
           </div>
+        </div>
+        <div className={classes.circularProgressContainer}>
+          <CircularProgressbar
+            value={progressPercentage}
+            text={`${progressPercentage}%`}
+            strokeWidth={10}
+            styles={buildStyles({
+              strokeLinecap: "butt",
+              pathColor: "#D3AB61",
+              trailColor: "#F6EEDF",
+            })}
+          />
         </div>
       </div>
       <div className={classes.formBody}>{children}</div>

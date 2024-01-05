@@ -36,6 +36,7 @@
 
 .stepHeader {
   background-color: white;
+  position: relative;
 }
 
 .progress {
@@ -97,4 +98,11 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.circularProgressContainer {
+  width: 64px;
+  position: absolute;
+  top: 6px;
+  right: 64px;
 }
