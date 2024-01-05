@@ -13,7 +13,8 @@ const FormScafold = ({
   children,
   onSubmit = () => {},
 }) => {
-  const progressPercentage = (step / (TOTAL_STEPS + 1)) * 100;
+  const fromPercentage = (step / (TOTAL_STEPS + 1)) * 100;
+  const progressPercentage = ((step - 1) / TOTAL_STEPS) * 100;
   const navgate = useNavigate();
   const doneIconSVG = (
     <svg
@@ -43,7 +44,7 @@ const FormScafold = ({
       <div className={classes.stepHeader}>
         <div
           className={classes.progress}
-          style={{ width: `${progressPercentage}%` }}
+          style={{ width: `${fromPercentage}%` }}
         />
         <div className={classes.steps}>
           <div className={classes.stepItem}>
